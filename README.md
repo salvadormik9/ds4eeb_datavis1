@@ -43,7 +43,7 @@ Once downloaded to your computer, you can now open `datavis1_activity.R` in RStu
 ## Mastering Color Choice
 
 After this activity, you will have better tools to pick appropriate colors for your figures to better communicate your science! In mastering color choice, you will be able to: 
-* Read specified colors using ggplot R package
+* Read specified colors using the ggplot2 R package
 * Use pre-defined color palettes successfully with the RColorBrewer and ggsci packages
 * Identify and apply palettes that are more accessible and colorblind friendly
 
