@@ -5,7 +5,7 @@ In our Seaside Chat, we will be teaching about the importance of choosing approp
 * Leading three activities about different ways to read in color in ggplot, resourceful packages for pre-defined color palettes, and options for color blind-friendly palettes
 
 ## Learning Outcomes 
-By the end of this activity, students will be able to:
+By the end of our Seaside Chat, students will be able to:
 1. Understand the format of HEX codes in creating different color pigments
 2. Import and apply different colors and color palettes in R
 3. Recognize how color choices affect data readability and interpretation
@@ -33,6 +33,11 @@ Near the top right, click the Download button. It looks like a downward arrow.
 
 Once downloaded to your computer, you can now open `datavis1_activity.R` in RStudio! This activity should take ~ 15 minutes.
 
+By the end of this activity, students should be able to:
+* Read specified colors using the ggplot2 R package
+* Use pre-defined color palettes successfully with the RColorBrewer and ggsci packages
+* Identify and apply palettes that are more accessible and colorblind friendly
+
 ## Resources
 * Our presentation [slides](https://docs.google.com/presentation/d/1yfYj6pq6YVQREUcFA_4Xk0ZHgGvORrsM_tWqQLC6bmU/edit?usp=sharing)
 * Resource for deciding best color palettes for data visualization from [Simplified Science Publishing](https://www.simplifiedsciencepublishing.com/resources/best-color-palettes-for-scientific-figures-and-data-visualizations)
@@ -42,10 +47,7 @@ Once downloaded to your computer, you can now open `datavis1_activity.R` in RStu
 
 ## Mastering Color Choice
 
-After this activity, you will have better tools to pick appropriate colors for your figures to better communicate your science! In mastering color choice, you will be able to: 
-* Read specified colors using the ggplot2 R package
-* Use pre-defined color palettes successfully with the RColorBrewer and ggsci packages
-* Identify and apply palettes that are more accessible and colorblind friendly
+After this activity, you will have better tools to pick appropriate colors for your figures to better communicate your science! 
 
 Example of poor color choice:
 
