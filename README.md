@@ -1,6 +1,6 @@
 ## Learning Outcomes 
 By the end of this activity, students will be able to:
-1. Understand the difference between hex codes and RGB
+1. Understand the format of hex codes in creating different color pigments
 2. Import and apply different colors and color palettes in R
 3. Recognize how color choices affect data interpretation
 4. Carefully choose colors to make plots more accessible
