@@ -8,7 +8,7 @@ In our Seaside Chat, we will be teaching about the importance of choosing approp
 By the end of this activity, students will be able to:
 1. Understand the format of HEX codes in creating different color pigments
 2. Import and apply different colors and color palettes in R
-3. Recognize how color choices affect data readability
+3. Recognize how color choices affect data readability and interpretation
 4. Identify color palettes that are more accessible for people with color vision deficiencies
 
 ## Why did we pick this topic, and why should we care about color in science?
