@@ -165,7 +165,7 @@ ggplot(iris,
 
 # One popular set is RColorBrewer.
 install.packages("RColorBrewer")
-library(RColorBrewer) 
+library(RColorBrewer)
 
 # Let's make a version of our scatter plot using the "Dark2" palette from RColorBrewer:
 ggplot(iris, 

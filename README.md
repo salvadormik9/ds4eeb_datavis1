@@ -15,6 +15,7 @@ Once downloaded to your computer, you can now open `datavis1_activity.R` in RStu
 
 ## Resources
 * Our presentation [slides](https://docs.google.com/presentation/d/1yfYj6pq6YVQREUcFA_4Xk0ZHgGvORrsM_tWqQLC6bmU/edit?usp=sharing)
+* Resource for deciding best color palettes for data visualization from [Simplified Science Publishing](https://www.simplifiedsciencepublishing.com/resources/best-color-palettes-for-scientific-figures-and-data-visualizations)
 * A color palette [cheat-sheet for R](https://www.nceas.ucsb.edu/sites/default/files/2020-04/colorPaletteCheatsheet.pdf)
 * A great website for finding ready-to-use color palettes: [color palette finder](https://r-graph-gallery.com/color-palette-finder)
 * A great website for generating **new** color palettes [coolors](https://coolors.co/)
