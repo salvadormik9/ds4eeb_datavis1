@@ -9,22 +9,10 @@
 # 1. Import and apply different colors and color palettes in R
 # 2. Recognize how color choices affect data interpretation
 # 3. Carefully colors to make plots more accessible
+
 # This activity assumes students are somewhat familiar with the ggplot package.
 
-# Updated: 2026-01-08
-
 # ========================================================================
-
-# Anik comment: I feel like we should introduce the default color palette first, then
-# introduce how to modify the colors manually using scale_color_manual() and
-# scale_color_gradient() after that? Also, add options to try changing
-# colors with the HEX code vs. using the built-in R color names. What do you guys think?
-# Also, I changed the line plot to dot plots, because I think the line plots
-# are a little difficult to look at in this dataset.
-
-# I added a short section at the start to introduce Hex codes and built-in colors
-# and some suggested additions/modifications to Activity 1 at the end of that section
-
 
 # ------------------------------
 #### SET UP ####
@@ -83,7 +71,7 @@ colors()
 # data interpretation and accessibility.
 
 # We will be using one of the example data sets that is provided with R. 
-# This dataset contains flower dimension measurements 
+# This dataset contains flower dimension measurements. 
 # (sepal width, sepal length, petal width, and petal length) from 3 Iris species.
 data(iris)
 
@@ -126,9 +114,8 @@ ggplot(iris,
 # 4) Alternatively, instead of reading in colors directly in ggplot, you can
 # define which color is assigned to which species in a vector beforehand.
 # This approach is useful when you have many variables and many plots
-# and want to keep the color of your variables consistent. This makes the 
-# mapping more reproducible and ensures the same species always gets the same 
-# color, even if the factor order changes. 
+# and want to keep the color of your variables consistent across plots. This 
+# makes the mapping more reproducible, even if the factor order changes. 
 
 #Let's first define the same colors as the previous plot before running ggplot.
 species_colors <- c(
@@ -150,7 +137,7 @@ ggplot(iris,
 # comparing petal length against petal width. Set each species as 
 # a different color that you pick. 
 
-#Note that instead of using geom_point(), which is for scatterplots, 
+#Note that instead of using geom_point(), which is for scatter plots, 
 # you would instead use geom_line()!
 
 
@@ -176,7 +163,7 @@ ggplot(iris,
 # RColorBrewer
 # ---------------
 
-# One popular set is RColorBrewer
+# One popular set is RColorBrewer.
 install.packages("RColorBrewer")
 library(RColorBrewer) 
 
