@@ -1,20 +1,26 @@
+## Our Topic: Color Palettes
+In our Seaside Chat, we will be teaching about the importance of choosing appropriate colors for creating clear and accessible scientific figures. We will be doing the following: 
+* Giving a brief introduction on what HEX codes are
+* Displaying examples of plots with poor vs. good color choices in plots
+* Leading three activities about different ways to read in color in ggplot, resourceful packages for pre-defined color palettes, and options for color blind-friendly palettes
+
 ## Learning Outcomes 
 By the end of this activity, students will be able to:
-1. Understand the format of hex codes in creating different color pigments
+1. Understand the format of HEX codes in creating different color pigments
 2. Import and apply different colors and color palettes in R
-3. Recognize how color choices affect data interpretation
-4. Carefully choose colors to make plots more accessible
+3. Recognize how color choices affect data readability
+4. Identify color palettes that are more accessible for people with color vision deficiencies
 
-## Why should we care about color in science?
+## Why did we pick this topic, and why should we care about color in science?
 
 1. Aesthetics
-  * Make your research more compelling and engaging
-  * Bring out patterns in your data more clearly
+  * Color can make your research more compelling and engaging
+  * It can bring out patterns in your data more clearly
 2. Storytelling
-  * Can create a throughline in your papers and presentations
-  * Can help reinform concepts for audience comprehension (e.g., hot treatment in RED, cold treatment in BLUE)
+  * Consistent choice of color create a throughline in your papers and presentations
+  * Appropriate colors help reinform concepts for audience comprehension (e.g., hot treatment in RED, cold treatment in BLUE)
 3. Accessibility
-  * Can broaden access to your research
+  * Accessible color palettes broaden access to your research for those with color vision deficiencies
   * Around 1/12 men and 1/200 women experience color vision deficiencies!
 
 ## Activity: Using Color in R
@@ -34,7 +40,12 @@ Once downloaded to your computer, you can now open `datavis1_activity.R` in RStu
 * A great website for finding ready-to-use color palettes: [color palette finder](https://r-graph-gallery.com/color-palette-finder)
 * A great website for generating **new** color palettes [coolors](https://coolors.co/)
 
-After this activity, you will have better tools to pick appropriate colors for your figures to better communicate your science!
+## Mastering Color Choice
+
+After this activity, you will have better tools to pick appropriate colors for your figures to better communicate your science! In mastering color choice, you will be able to: 
+* Read specified colors using ggplot R package
+* Use pre-defined color palettes successfully with the RColorBrewer and ggsci packages
+* Identify and apply palettes that are more accessible and colorblind friendly
 
 Example of poor color choice:
 
