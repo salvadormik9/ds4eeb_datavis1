@@ -14,7 +14,7 @@ Near the top right, click the Download button. It looks like a downward arrow.
 Once downloaded to your computer, you can now open `datavis1_activity.R` in RStudio! This activity should take ~ 15 minutes.
 
 ## Resources:
-* Our slides for our presentation are listed [here](https://docs.google.com/presentation/d/1yfYj6pq6YVQREUcFA_4Xk0ZHgGvORrsM_tWqQLC6bmU/edit?usp=sharing).
+* Our presentation [slides](https://docs.google.com/presentation/d/1yfYj6pq6YVQREUcFA_4Xk0ZHgGvORrsM_tWqQLC6bmU/edit?usp=sharing).
 * A color palette [cheat-sheet for R](https://www.nceas.ucsb.edu/sites/default/files/2020-04/colorPaletteCheatsheet.pdf)
 * A great website for finding ready-to-use color palettes: [color palette finder](https://r-graph-gallery.com/color-palette-finder)
 * A great website for generating **new** color palettes [coolors](https://coolors.co/)
