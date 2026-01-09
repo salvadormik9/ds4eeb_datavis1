@@ -36,5 +36,8 @@ Once downloaded to your computer, you can now open `datavis1_activity.R` in RStu
 
 After this activity, you will have better tools to pick appropriate colors for your figures to better communicate your science!
 
+<img width="773" height="550" alt="Rplot_badcolors" src="https://github.com/user-attachments/assets/b4f691ca-b689-4ff7-bed4-0ec40adda165" />
+
+<img width="773" height="550" alt="Rplot_goodcolors" src="https://github.com/user-attachments/assets/d44849c9-0e51-4d2e-83ba-fcdeb9b48cd9" />
 
 
