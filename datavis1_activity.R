@@ -117,7 +117,7 @@ ggplot(iris,
 # and want to keep the color of your variables consistent across plots. This 
 # makes the mapping more reproducible, even if the factor order changes. 
 
-#Let's first define the same colors as the previous plot before running ggplot.
+# Let's first define the same colors as the previous plot before running ggplot.
 species_colors <- c(
   setosa     = "#7CC6FE",
   versicolor = "#CCD5FF",
@@ -137,7 +137,7 @@ ggplot(iris,
 # comparing petal length against petal width. Set each species as 
 # a different color that you pick. 
 
-#Note that instead of using geom_point(), which is for scatter plots, 
+# Note that instead of using geom_point(), which is for scatter plots, 
 # you would instead use geom_line()!
 
 
@@ -201,9 +201,9 @@ ggplot(iris,
   theme_bw()
 
 # Other color palettes in this package include the below options.
-scale_color_aaas()
-scale_color_lancet()
-scale_color_jco()
+scale_color_aaas() #American Association for the Advancement of Science
+scale_color_lancet() #Lancet family of medical journals
+scale_color_jco() #Journal of Clinical Oncology
 
 # Your Turn: Play around with different color palettes in RColorBrewer and ggsci,
 # using the Iris dataset! 
