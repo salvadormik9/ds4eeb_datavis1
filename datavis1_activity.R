@@ -215,15 +215,16 @@ scale_color_jco() #Journal of Clinical Oncology
 
 # After choosing a palette that you like, you can check whether or not
 # the palette is color-blind friendly. There are many R tools we can use, but in 
-# this activity, we will be using the colorblindcheck package.
-# You can read up on the documentation by searching "colorblindcheck" under the
-# help tab or by running ??colorblindcheck in the R console. 
-
+# this activity, we will be using the colorblindcheck and the colorspace
+# R packages.
+ 
 # For a moment, let's see the world through different eyes ;)
 
+# colorblindcheck
+# ---------------
 # The colorblindcheck package helps you test whether your color palettes and
 # plots are readable for people with color vision deficiencies (CVD). It will
-# show how your palettes look to people with different CVD.
+# show how your palettes look to people with different CVDs.
 
 install.packages("colorblindcheck")
 library(colorblindcheck)
@@ -260,7 +261,6 @@ palette_check(rainbow_pal, plot = TRUE)
 # tolerance and ndcp to equal ncp for all color-vision-deficiencies.
 
 
-
 # Here is another useful command in the colorblindcheck package!
 # palette_dist() calculates the distance between every pair of 
 # colors in the palette. It outputs a distance matrix, where large values mean
@@ -272,15 +272,6 @@ palette_dist(rainbow_pal)
 # produced in palette_dist() for our color palette rainbow_pal. 
 # - Which colors are difficult to distinguish for different CVD?
 # - Which colors would you change in the palette? 
-
-
-
-
-
-# As you observed in the plot and matrix, many of the colors that may be easily 
-# distinguishable to you, might not be for others. It's important that we 
-# choose a color scheme that still conveys data aesthetically, but also 
-# accessible for all!
 
 # Your Turn: Practice setting your own color palette and check if it is 
 # color-blind friendly!
@@ -295,3 +286,45 @@ palette_check(species_colors, plot = TRUE)
 Dark2_pal <- brewer.pal(n = 8, name = "Dark2")
 Dark2_pal
 palette_check(Dark2_pal, plot = TRUE)
+
+# colorspace
+# ---------------
+# Another similar package that checks your color palette is the colorspace
+# package!
+
+# Install and load the colorspace package
+install.packages("colorspace")
+library(colorspace)
+
+# We'll then make our own color palette and play around with it.
+
+my_palette <- c("#1b9e77", "#d95f02", "#7570b3")
+
+
+# Let's take a look and see what the original colors look like first. We do
+# this by using the swatchplot() function.
+swatchplot(my_palette)
+
+# Now let's see what it looks like with common color vision deficiencies (CVDs).
+# We will be looking at the same CVDs as the colorblindcheck package:
+# (Deuteranopia (green-blind), Protanopia (red-blind), and Tritanopia (blue-blind).
+swatchplot(
+  my_palette,
+  cvd = c("deutan", "protan", "tritan")
+)
+# Notice that we produce a similar plot to the colorblindcheck package! 
+
+# Finally, let's see an example of a good color palette! 
+nice <- c(
+  "#E69F00", "#56B4E9", "#009E73",
+  "#F0E442", "#0072B2", "#D55E00",
+  "#CC79A7"
+)
+
+swatchplot(nice)
+swatchplot(nice, cvd = c("deutan", "protan", "tritan"))
+
+# As you observed in this activity, many of the colors that may be easily 
+# distinguishable to you, might not be for others. It's important that we 
+# choose a color scheme that still conveys data aesthetically, but also 
+# accessible for all!
