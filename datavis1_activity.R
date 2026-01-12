@@ -165,7 +165,7 @@ ggplot(iris,
 
 # One popular set is RColorBrewer.
 install.packages("RColorBrewer")
-library(RColorBrewer) 
+library(RColorBrewer)
 
 # Let's make a version of our scatter plot using the "Dark2" palette from RColorBrewer:
 ggplot(iris, 
@@ -207,4 +207,41 @@ scale_color_jco() #Journal of Clinical Oncology
 
 # Your Turn: Play around with different color palettes in RColorBrewer and ggsci,
 # using the Iris dataset! 
+
+
+# -------------------------------------
+# ACTIVITY 3: ACCESSIBLE COLOR PALLETES 
+# -------------------------------------
+
+# After choosing a palette that you like. You are able to check whether or not
+# the palette is colorblind friendly. There are a few different tools we can use
+# in RStudio to check. You can read up on these tools and how to interpret your
+# by searching "colorblindcheck" under the help tab or by running ??colorblind check
+
+# For a moment lets see the world through different eyes ;) 
+
+library(colorblindcheck)
+rainbow_pal = rainbow(n = 7)
+rainbow_pal
+#> [1] "#FF0000" "#FFDB00" "#49FF00" "#00FF92" "#0092FF" "#4900FF" "#FF00DB"
+palette_check(rainbow_pal, plot = TRUE)
+
+# After running palette_check() it will print a distribution of how colors 
+# appear to the "normal" eye versus the eyes of different vision impairments 
+# (e.g. Deuteranopia, Protanopia, Tritnopia)
+
+# As you observed in the print out many of the colors that may be easily 
+# distinguishable to you, might not be for others. It's important that we 
+# choose a color scheme that still conveys data aesthetically, but also 
+# accessible for all. 
+
+
+
+
+
+
+
+palette_dist(rainbow_pal)
+palette_plot(rainbow_pal)
+palette_check(rainbow_pal)
 
