@@ -307,7 +307,7 @@ swatchplot(my_palette)
 
 # Now let's see what it looks like with common color vision deficiencies (CVDs).
 # We will be looking at the same CVDs as the colorblindcheck package:
-# (Deuteranopia (green-blind), Protanopia (red-blind), and Tritanopia (blue-blind).
+# (Deuteranopia (green-blind), Protanopia (red-blind), and Tritanopia (blue-blind)).
 swatchplot(
   my_palette,
   cvd = c("deutan", "protan", "tritan")
