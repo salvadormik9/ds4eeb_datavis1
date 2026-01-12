@@ -213,35 +213,72 @@ scale_color_jco() #Journal of Clinical Oncology
 # ACTIVITY 3: ACCESSIBLE COLOR PALLETES 
 # -------------------------------------
 
-# After choosing a palette that you like. You are able to check whether or not
-# the palette is colorblind friendly. There are a few different tools we can use
-# in RStudio to check. You can read up on these tools and how to interpret your
-# by searching "colorblindcheck" under the help tab or by running ??colorblind check
+# After choosing a palette that you like, you can check whether or not
+# the palette is color-blind friendly. There are many R tools we can use, but in 
+# this activity, we will be using the colorblindcheck package.
+# You can read up on the documentation by searching "colorblindcheck" under the
+# help tab or by running ??colorblindcheck in the R console. 
 
-# For a moment lets see the world through different eyes ;) 
+# For a moment, let's see the world through different eyes ;)
 
+# The colorblindcheck package helps you test whether your color palettes and
+# plots are readable for people with color vision deficiencies (CVD). It will
+# show how your palettes look to people with different CVD.
+
+install.packages("colorblindcheck")
 library(colorblindcheck)
+
+# Using the base R function rainbow(), let's create a vector of 7 colors to 
+# act as our color palette.
+
 rainbow_pal = rainbow(n = 7)
 rainbow_pal
-#> [1] "#FF0000" "#FFDB00" "#49FF00" "#00FF92" "#0092FF" "#4900FF" "#FF00DB"
+# "#FF0000" (pure red) "#FFDB00" (yellow) "#49FF00" (lime green) 
+# "#00FF92" (green-cyan) "#0092FF" (sky blue) "#4900FF" (violet) 
+# "#FF00DB" (magenta)
+
+# Let's check if the rainbow color palette is color-blind friendly, using 
+# palette_check(). 
 palette_check(rainbow_pal, plot = TRUE)
 
-# After running palette_check() it will print a distribution of how colors 
-# appear to the "normal" eye versus the eyes of different vision impairments 
-# (e.g. Deuteranopia, Protanopia, Tritnopia)
+# Let's first look at the plot in the right. This command will print out a plot of 
+# distribution of how colors  appear to the "normal" eye versus the eyes of 
+# different vision impairments  (e.g. Deuteranopia (green-blind), 
+# Protanopia (red-blind), and Tritanopia (blue-blind)).
 
-# As you observed in the print out many of the colors that may be easily 
+# Let's also look at the results printed in the console! 
+# palette_check() will give you a table, where
+# - tolerance is the minimum recommended distance between any two colors 
+# that is used as a threshold
+# - ncp is the number of color pairs tested
+# - ndcp is the number of distinguishable color pairs whose distance 
+# exceeds the tolerance
+# - min_dist is the minimum distance between any two colors in the palette, and
+# - mean_dist is the average distance across all color pairs.
+
+# Ideally, you would want the min_dist to be equal to or greater than the
+# tolerance and ndcp to equal ncp for all color-vision-deficiencies.
+
+
+
+# Here is another useful command in the colorblindcheck package!
+# palette_dist() calculates the distance between every pair of 
+# colors in the palette. It outputs a distance matrix, where large values mean
+# the colors are more distinct, and smaller values mean the colors are hard 
+# to tell apart. 
+palette_dist(rainbow_pal)
+
+# REFLECTION: Compare the colors produced in palette_check() and the matrix values 
+# produced in palette_dist() for our color palette rainbow_pal. 
+# - Which colors are difficult to distinguish for different CVD?
+# - Which colors would you change in the palette? 
+
+
+
+
+
+# As you observed in the plot and matrix, many of the colors that may be easily 
 # distinguishable to you, might not be for others. It's important that we 
 # choose a color scheme that still conveys data aesthetically, but also 
-# accessible for all. 
-
-
-
-
-
-
-
-palette_dist(rainbow_pal)
-palette_plot(rainbow_pal)
-palette_check(rainbow_pal)
+# accessible for all.
 
