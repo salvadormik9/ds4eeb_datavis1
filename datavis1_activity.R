@@ -8,7 +8,7 @@
 # By the end of this activity, students will be able to:
 # 1. Import and apply different colors and color palettes in R
 # 2. Recognize how color choices affect data interpretation
-# 3. Carefully colors to make plots more accessible
+# 3. Carefully choose colors to make plots more accessible
 
 # This activity assumes students are somewhat familiar with the ggplot package.
 
