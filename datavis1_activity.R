@@ -225,8 +225,8 @@ scale_color_jco() #Journal of Clinical Oncology
 # plots are readable for people with color vision deficiencies (CVD). It will
 # show how your palettes look to people with different CVD.
 
-install.packages("colorblindcheck")
-library(colorblindcheck)
+install.packages("colorblindr")
+library(colorblindr)
 
 # Using the base R function rainbow(), let's create a vector of 7 colors to 
 # act as our color palette.
@@ -280,5 +280,15 @@ palette_dist(rainbow_pal)
 # As you observed in the plot and matrix, many of the colors that may be easily 
 # distinguishable to you, might not be for others. It's important that we 
 # choose a color scheme that still conveys data aesthetically, but also 
-# accessible for all.
+# accessible for all!
+#---------------- Practice on changing the color 
+species_colors < - c("#7CC6FE","#CCD5FF", "#E7BBE3")
+
+
+
+species_colors_pal = spall()species_colors_pal = species_colors(n = 3)
+species_colors_pal
+
+Dark2_pal = display.brewer.pal(n = 7, "Dark2")
+palette_check(Dark2_pal, plot = TRUE)
 
