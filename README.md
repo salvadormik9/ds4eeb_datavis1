@@ -3,7 +3,7 @@
 In our Seaside Chat, we will be teaching about the importance of choosing appropriate colors for creating clear and accessible scientific figures. We will be doing the following: 
 * Giving a brief introduction on what HEX codes are
 * Displaying examples of plots with poor vs. good color choices in plots
-* Leading three activities about different ways to read in color in ggplot, resourceful packages for pre-defined color palettes, and options for color blind-friendly palettes
+* Leading three activities about different ways to read in color in ggplot, resourceful packages for pre-defined color palettes, and packages to check if palettes are color blind-friendly
 
 ## Learning Outcomes 
 By the end of our Seaside Chat, students will be able to:
@@ -57,3 +57,4 @@ Example of poor color choice:
 Example of better color choice:
 
 <img width="385" height="275" alt="Rplot_goodcolors" src="https://github.com/user-attachments/assets/d44849c9-0e51-4d2e-83ba-fcdeb9b48cd9" />
+
