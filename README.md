@@ -2,14 +2,14 @@
 In our Seaside Chat, we will be teaching about the importance of choosing appropriate colors for creating clear and accessible scientific figures. We will be doing the following: 
 * Giving a brief introduction on what HEX codes are
 * Displaying examples of plots with poor vs. good color choices in plots
-* Leading three activities about different ways to read in color in ggplot, resourceful packages for pre-defined color palettes, and options for color blind-friendly palettes
+* Leading three activities about different ways to read in color in ggplot, resourceful packages for pre-defined color palettes, and options for checking if our palettes are color blind-friendly
 
 ## Learning Outcomes 
 By the end of our Seaside Chat, students will be able to:
 1. Understand the format of HEX codes in creating different color pigments
 2. Import and apply different colors and color palettes in R
 3. Recognize how color choices affect data readability and interpretation
-4. Identify color palettes that are more accessible for people with color vision deficiencies
+4. Check if our color palettes are accessible for people with color vision deficiencies
 
 ## Why did we pick this topic, and why should we care about color in science?
 
@@ -18,7 +18,7 @@ By the end of our Seaside Chat, students will be able to:
   * It can bring out patterns in your data more clearly
 2. Storytelling
   * Consistent choice of color create a throughline in your papers and presentations
-  * Appropriate colors help reinform concepts for audience comprehension (e.g., hot treatment in RED, cold treatment in BLUE)
+  * Appropriate colors help reinforce concepts for audience comprehension (e.g., hot treatment in RED, cold treatment in BLUE)
 3. Accessibility
   * Accessible color palettes broaden access to your research for those with color vision deficiencies
   * Around 1/12 men and 1/200 women experience color vision deficiencies!
@@ -36,7 +36,7 @@ Once downloaded to your computer, you can now open `datavis1_activity.R` in RStu
 By the end of this activity, students should be able to:
 * Read specified colors using the ggplot2 R package
 * Use pre-defined color palettes successfully with the RColorBrewer and ggsci packages
-* Identify and apply palettes that are more accessible and colorblind friendly
+* Identify and create color palettes that are more accessible and colorblind friendly
 
 ## Resources
 * Our presentation [slides](https://docs.google.com/presentation/d/1yfYj6pq6YVQREUcFA_4Xk0ZHgGvORrsM_tWqQLC6bmU/edit?usp=sharing)
