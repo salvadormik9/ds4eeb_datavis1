@@ -225,8 +225,8 @@ scale_color_jco() #Journal of Clinical Oncology
 # plots are readable for people with color vision deficiencies (CVD). It will
 # show how your palettes look to people with different CVD.
 
-install.packages("colorblindr")
-library(colorblindr)
+install.packages("colorblindcheck")
+library(colorblindcheck)
 
 # Using the base R function rainbow(), let's create a vector of 7 colors to 
 # act as our color palette.
@@ -281,14 +281,17 @@ palette_dist(rainbow_pal)
 # distinguishable to you, might not be for others. It's important that we 
 # choose a color scheme that still conveys data aesthetically, but also 
 # accessible for all!
-#---------------- Practice on changing the color 
-species_colors < - c("#7CC6FE","#CCD5FF", "#E7BBE3")
 
+# Your Turn: Practice setting your own color palette and check if it is 
+# color-blind friendly!
 
+# Note that these are the same hex codes from Activity 1. 
+# Make sure to change the hex codes to what you want!
+species_colors <- c("#7CC6FE","#CCD5FF", "#E7BBE3")
+palette_check(species_colors, plot = TRUE)
 
-species_colors_pal = spall()species_colors_pal = species_colors(n = 3)
-species_colors_pal
-
-Dark2_pal = display.brewer.pal(n = 7, "Dark2")
+# In case we want to use a predefined palette like we showed in Activity 2, 
+# here is an example of checking the Dark2 palette from RColorBrewer. 
+Dark2_pal <- brewer.pal(n = 8, name = "Dark2")
+Dark2_pal
 palette_check(Dark2_pal, plot = TRUE)
-
